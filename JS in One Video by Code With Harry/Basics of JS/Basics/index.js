@@ -193,7 +193,3 @@ At very High Level, there are 2 types of data types
 // console.log(d.getDay());
 // console.log(d.getFullYear());
 
-
-//14. JavaScript Document Object Model(DOM)
-let elem = document.getElementById('click');
-console.log(elem);
