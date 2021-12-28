@@ -16,10 +16,3 @@
 // {
 //     console.log("Mouse is over Paragraph1");
 // });
-
-
-
-
-
-// Set Timeout and Set Interval
-// Arrow Functions
