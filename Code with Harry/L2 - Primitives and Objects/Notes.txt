@@ -1,0 +1,2 @@
+There are 7 types of primitives in JS
+-> N(Null), N(Number), S(Symbol), S(String), B(Boolean), B(BigInt), U(Undefined)
