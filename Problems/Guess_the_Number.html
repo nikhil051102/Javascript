@@ -6,28 +6,43 @@ to terminate once the number is guessed. Number should be between 1-100 -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the Number</title>
 </head>
+
 <body>
-    
+
 </body>
 <script>
-    let number = Math.floor((Math.random() * 100) + 1);
-    let no_of_guess = 0;
-    for(let n = 0; n<2; n++) {
-        let userInput = prompt("Enter Number : ");
-        if(userInput == number) {
-            console.log("Congratulations !! Guess was correct. Your Score is "+ (100 - n));
-            break;
-        } else if(userInput < number) {
-            console.log("Input is less than number"); 
-        }else {
-            console.log("Input is greater than number");
+    const magicNo = Math.floor((Math.random() * 100) + 1);
+
+    let chance = 0;
+    console.log("Welcome my Friends!\n");
+    let num;
+
+    do {
+        num = prompt("Enter the number: ");
+        num = Number.parseInt(num);
+
+        if (num < magicNo) {
+            console.log(`The magic no is greater than ${num}\n`);
         }
-    }
+        else if (num > magicNo) {
+            console.log(`The magic no is lesser than ${num}\n`);
+        }
+
+        chance++;
+    } while (num != magicNo)
+
+    const score = 100 - chance;
+
+    console.log("\nCongratulations You Won!");
+    console.log(`Your score is ${score}`);
+    console.log(`The magic no is ${magicNo}`);
 </script>
+
 </html>
