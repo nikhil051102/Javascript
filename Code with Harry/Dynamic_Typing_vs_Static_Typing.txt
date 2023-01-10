@@ -1,0 +1,9 @@
+Dynamically Typed Languages : type checking takes place at runtime or execution time means we can change type of variable on runtime.
+Statically Types Languages : We have to declare variable type before execution
+
+/*
+var a = 93;
+console.log(typeof (a));
+a = "nikhil";
+console.log(typeof (a));
+*/
